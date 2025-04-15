@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Advertisements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .ad-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .ad-image {
+            width: 800px;
+            height: 500px;
+            margin: 20px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* First Image Styles */
+        .invert-ad {
+            filter: invert(20%);
+            background-image: url(images/honda\ civic.avif);
+        }
+        
+        .invert-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border: 2px solid #f00;
+            font-size: 24px;
+        }
+        
+        /* Second Image Styles */
+        .blur-ad {
+            filter: blur(2px);
+            background-image: url(images/honda\ accord.avif);
+        }
+        
+        .blur-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            font-size: 28px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .blur-link {
+            display: inline-block;
+            background-color: #f00;
+            color: white;
+            padding: 8px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Third Image Styles */
+        .gradient-ad {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/honda\ crv.avif);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .gradient-title {
+            color: white;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .gradient-paragraph {
+            color: white;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .para1 { width: 80%; }
+        .para2 { width: 60%; align-self: flex-start; }
+        .para3 { width: 70%; align-self: flex-end; }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <!-- First Advertisement -->
+        <div class="ad-image invert-ad">
+            <div class="invert-caption">
+                The All-New Honda Civic - Redefining Performance
+            </div>
+        </div>
+        
+        <!-- Second Advertisement -->
+        <div class="ad-image blur-ad">
+            <div class="blur-caption">
+                Honda Accord 2023<br>
+                Experience Luxury Redefined
+                <a href="#" class="blur-link">Test Drive Today</a>
+            </div>
+        </div>
+        
+        <!-- Third Advertisement -->
+        <div class="ad-image gradient-ad">
+            <h2 class="gradient-title">Honda CR-V: The Ultimate Family SUV</h2>
+            <p class="gradient-paragraph para1">The Honda CR-V combines spacious comfort with impressive fuel efficiency, making it the perfect choice for family adventures.</p>
+            <p class="gradient-paragraph para2">With available all-wheel drive and advanced safety features, the CR-V keeps you protected in all driving conditions.</p>
+            <p class="gradient-paragraph para3">Experience the perfect blend of versatility and performance with Honda's best-selling SUV.</p>
+        </div>
+    </div>
+</body>
+</html>

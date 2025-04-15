@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a1a;
+            color: #ffffff;
+        }
+        
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1a1a3a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .title {
+            text-align: right;
+            padding: 10px;
+        }
+        
+        .title h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: #4fc3f7;
+            text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+        }
+        
+        /* Navigation styles */
+        nav {
+            width: 100%;
+            background-color: #0d0d26;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+        
+        nav ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            color: #bbdefb;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #4fc3f7;
+            color: #0a0a1a;
+        }
+        
+        /* Introduction section */
+        .intro-section {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            align-items: center;
+        }
+        
+        .intro-image {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .intro-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        
+        .intro-text {
+            flex: 1;
+            padding: 20px;
+            text-align: right;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        /* Content sections */
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        
+        article {
+            width: 30%;
+            margin: 15px 0;
+            padding: 20px;
+            background-color: #1a1a3a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(79, 195, 247, 0.3);
+            background-color: #23234d;
+        }
+        
+        article img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        article p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        article a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        article a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/space logo.jpg" alt="Space Logo">
+        </div>
+        <div class="title">
+            <h1>Space Exploration</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Missions</a></li>
+            <li><a href="#">Planets</a></li>
+            <li><a href="#">Galaxies</a></li>
+        </ul>
+    </nav>
+    
+    <section class="intro-section">
+        <div class="intro-image">
+            <img src="images/earth.webp" alt="Earth from Space">
+        </div>
+        <div class="intro-text">
+            <p>Welcome to our Space Exploration portal. Here you'll find the latest news about space missions, discoveries of distant planets, and breathtaking images of our universe. Join us on this journey through the cosmos as we explore the final frontier.</p>
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <article>
+            <img src="images/astronaut.jpg" alt="Astronaut in space">
+            <p>The International Space Station (ISS) is a modular space station in low Earth orbit. It is a multinational collaborative project involving five participating space agencies.</p>
+            <a href="#">Read more about ISS</a>
+        </article>
+        
+        <article>
+            <img src="images/mars.jpg" alt="Mars planet">
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. Mars is often called the Red Planet.</p>
+            <a href="#">Explore Mars missions</a>
+        </article>
+        
+        <article>
+            <img src="images/milkyway.jpg" alt="Milky Way galaxy">
+            <p>The Milky Way is the galaxy that contains our Solar System. The name describes the galaxy's appearance from Earth: a hazy band of light seen in the night sky.</p>
+            <a href="#">Discover our galaxy</a>
+        </article>
+    </section>
+    
+    <section class="content-section">
+        <article>
+            <img src="images/solareclipse.webp" alt="Solar eclipse">
+            <p>A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby obscuring the view of the Sun from a small part of Earth.</p>
+            <a href="#">Learn about eclipses</a>
+        </article>
+        
+        <article>
+            <img src="images/blackhole.webp" alt="Black hole concept">
+            <p>A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it.</p>
+            <a href="#">Black hole mysteries</a>
+        </article>
+        
+        <article>
+            <img src="images/rocket.avif" alt="Rocket launch">
+            <p>SpaceX's Starship spacecraft and Super Heavy rocket represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond.</p>
+            <a href="#">Future of space travel</a>
+        </article>
+    </section>
+</body>
+</html>
