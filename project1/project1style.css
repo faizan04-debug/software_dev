@@ -1,0 +1,118 @@
+/* BMW Color Scheme */
+:root {
+    --bmw-blue: #0066B1;       /* Official BMW blue */
+    --bmw-light-blue: #6AB5D6;  /* Lighter accent blue */
+    --bmw-red: #E4002B;        /* BMW M red */
+    --bmw-white: #FFFFFF;      /* Pure white */
+    --bmw-gray: #F5F5F5;       /* Light background gray */
+    --bmw-dark: #1A1A1A;       /* Dark text */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--bmw-dark);
+    background-color: var(--bmw-white);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--bmw-blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--bmw-blue);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--bmw-red);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--bmw-white);
+    color: var(--bmw-blue);
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid var(--bmw-gray);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: var(--bmw-red);
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.color-stripes {
+    display: flex;
+    height: 8px;
+    margin-top: 1rem;
+}
+
+.blue-stripe {
+    background-color: var(--bmw-blue);
+    flex: 1;
+}
+
+.white-stripe {
+    background-color: var(--bmw-white);
+    flex: 1;
+    border-left: 1px solid var(--bmw-gray);
+    border-right: 1px solid var(--bmw-gray);
+}
+
+.red-stripe {
+    background-color: var(--bmw-red);
+    flex: 1;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--bmw-blue);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: var(--bmw-white);
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin: 0 0.5rem;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    background-color: var(--bmw-red);
+    color: var(--bmw-white);
+}
+
