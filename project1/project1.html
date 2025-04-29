@@ -1,19 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +6,7 @@
     <title>BMW - The Ultimate Driving Machine</title>
     <link rel="stylesheet" href="project1style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/bmw-logo.png" type="image/x-icon">
+    <link rel="icon" href="images/bmwlogo.webp" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -40,11 +24,146 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="project1.html" class="active">Home</a></li>
             <li><a href="history.html">History</a></li>
             <li><a href="models.html">Models</a></li>
             <li><a href="technology.html">Technology</a></li>
         </ul>
     </nav>
 
-    
+    <main>
+        <section class="hero">
+            <img src="images/bmwmountainroad.avif" alt="BMW M Series on mountain road" loading="lazy">
+            <div class="hero-text">
+                <h2>Experience Driving Perfection</h2>
+                <p>Discover the precision engineering and luxurious performance that defines every BMW vehicle.</p>
+                <div class="cta-buttons">
+                    <a href="models.html" class="btn pulse">Explore Models</a>
+                    <a href="#quick-facts" class="btn secondary">Quick Facts</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-facts" class="quick-facts">
+            <h2><span class="icon">🚗</span> BMW at a Glance</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Founded</th>
+                        <td>1916</td>
+                        <th>Headquarters</th>
+                        <td>Munich, Germany</td>
+                    </tr>
+                    <tr>
+                        <th>Founder</th>
+                        <td>Franz Josef Popp</td>
+                        <th>Revenue</th>
+                        <td>€142.6 billion (2022)</td>
+                    </tr>
+                    <tr>
+                        <th>Popular Models</th>
+                        <td>3 Series, 5 Series, X5</td>
+                        <th>Production</th>
+                        <td>2.5 million vehicles/year</td>
+                    </tr>
+                    <tr>
+                        <th>Slogan</th>
+                        <td>The Ultimate Driving Machine</td>
+                        <th>Employees</th>
+                        <td>149,475 (2022)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2><span class="icon">✨</span> Why Choose BMW?</h2>
+            <div class="highlight-cards">
+                <div class="card">
+                    <div class="card-icon">🏎️</div>
+                    <h3>Performance</h3>
+                    <p>Precision engineering delivers exhilarating driving dynamics and responsive handling.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Quality</h3>
+                    <p>Meticulous German craftsmanship ensures lasting durability and premium materials.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>Pioneering technologies from iDrive to electric drivetrains keep BMW ahead.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Heritage</h3>
+                    <p>Over 100 years of automotive excellence and motorsport dominance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-models">
+            <h2><span class="icon">🌟</span> Featured BMW Models</h2>
+            <div class="model-gallery">
+                <div class="model-card">
+                    <img src="images/bmw3series.jpg" alt="BMW 3 Series" loading="lazy">
+                    <h3>3 Series</h3>
+                    <p>The quintessential sports sedan that defines its class.</p>
+                    <a href="models.html#3-series" class="model-link">Learn More →</a>
+                </div>
+                <div class="model-card">
+                    <img src="images/bmwx5.webp" alt="BMW X5" loading="lazy">
+                    <h3>X5</h3>
+                    <p>The original Sports Activity Vehicle® that started it all.</p>
+                    <a href="models.html#x5" class="model-link">Learn More →</a>
+                </div>
+                <div class="model-card">
+                    <img src="images/bmwm8.avif" alt="BMW M8" loading="lazy">
+                    <h3>M8 Competition</h3>
+                    <p>Peak performance with 617 horsepower of pure adrenaline.</p>
+                    <a href="models.html#m8" class="model-link">Learn More →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BMW Models</h3>
+                <ul>
+                    <li><a href="models.html#sedans">Sedans</a></li>
+                    <li><a href="models.html#suvs">SUVs</a></li>
+                    <li><a href="models.html#electric">Electric Vehicles</a></li>
+                    <li><a href="models.html#m">M Series</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.bmw.com" target="_blank">Official BMW Site</a></li>
+                    <li><a href="https://www.bmwgroup.com" target="_blank">BMW Group</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/BMW" target="_blank">BMW Wikipedia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#"><span class="icon">📱</span></a>
+                    <a href="#"><span class="icon">📧</span></a>
+                    <a href="#"><span class="icon">📸</span></a>
+                </div>
+                <div class="newsletter">
+                    <p>Subscribe to BMW News</p>
+                    <input type="email" placeholder="Your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 BMW Informational Site. Not affiliated with BMW AG.</p>
+            <p>Made with ❤️ by automotive enthusiasts</p>
+        </div>
+    </footer>
+</body>
+</html>

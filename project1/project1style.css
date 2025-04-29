@@ -116,3 +116,704 @@ nav ul li a.active {
     color: var(--bmw-white);
 }
 
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--bmw-white);
+    width: 90%;
+    max-width: 800px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--bmw-white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: var(--bmw-blue);
+    color: var(--bmw-white);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0.5rem;
+    border: 2px solid var(--bmw-blue);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--bmw-red);
+    border-color: var(--bmw-red);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn.secondary {
+    background-color: transparent;
+    border-color: var(--bmw-white);
+}
+
+.btn.secondary:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Animation for the button */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 102, 177, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 102, 177, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 102, 177, 0);
+    }
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Quick Facts Table */
+.quick-facts {
+    margin: 3rem 0;
+}
+
+.quick-facts h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border: 2px solid var(--bmw-blue);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--bmw-blue);
+    color: var(--bmw-white);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bmw-gray);
+}
+
+tr:hover {
+    background-color: #e6f2fa;
+}
+
+/* Highlight Cards */
+.highlight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.card {
+    background: var(--bmw-white);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--bmw-blue);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-top-color: var(--bmw-red);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--bmw-blue);
+}
+
+/* Featured Models */
+.featured-models {
+    margin: 4rem 0;
+}
+
+.featured-models h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.model-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.model-card {
+    background: var(--bmw-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.model-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.model-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--bmw-blue);
+}
+
+.model-card:hover img {
+    border-bottom-color: var(--bmw-red);
+}
+
+.model-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: var(--bmw-blue);
+}
+
+.model-card p {
+    padding: 0 1rem;
+    color: var(--bmw-dark);
+}
+
+.model-link {
+    display: inline-block;
+    padding: 0.5rem 1rem 1rem;
+    color: var(--bmw-red);
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bmw-blue);
+    color: var(--bmw-white);
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.footer-section h3 {
+    color: var(--bmw-white);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: var(--bmw-light-blue);
+}
+
+.footer-section ul li a:hover {
+    color: var(--bmw-white);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    color: var(--bmw-white);
+    font-size: 1.5rem;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bmw-light-blue);
+    color: var(--bmw-light-blue);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .highlight-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Timeline Styles */
+.timeline-section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--bmw-blue);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bmw-red);
+    color: var(--bmw-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding: 1.5rem;
+    background: var(--bmw-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--bmw-blue);
+}
+
+.timeline-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--bmw-blue);
+}
+
+.timeline-content img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 2px solid var(--bmw-gray);
+}
+
+/* Milestones */
+.milestones {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.milestone-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.milestone-card {
+    background: var(--bmw-white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.milestone-card:hover {
+    transform: translateY(-5px);
+}
+
+.milestone-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--bmw-gray);
+}
+
+.milestone-header h3 {
+    color: var(--bmw-blue);
+    margin-bottom: 0.5rem;
+}
+
+.bmw-red-bar {
+    height: 4px;
+    background: var(--bmw-red);
+    width: 50px;
+}
+
+/* Model Categories */
+.model-category {
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.model-detail {
+    background: var(--bmw-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.model-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.model-detail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.model-info {
+    padding: 1.5rem;
+}
+
+.model-info h3 {
+    color: var(--bmw-blue);
+    margin-bottom: 0.5rem;
+}
+
+.model-info ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.model-info li {
+    margin-bottom: 0.5rem;
+}
+
+/* Technology Features */
+.tech-showcase {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tech-feature {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.tech-feature.reverse {
+    flex-direction: row-reverse;
+}
+
+.tech-image {
+    flex: 1;
+}
+
+.tech-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--bmw-blue);
+}
+
+.tech-details {
+    flex: 1;
+}
+
+.tech-details h3 {
+    color: var(--bmw-blue);
+    margin-bottom: 1rem;
+}
+
+.tech-benefits {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.tech-benefits li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.tech-benefits li::before {
+    content: '✓';
+    color: var(--bmw-red);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Infotainment Section */
+.infotainment {
+    padding: 3rem 1rem;
+    background: var(--bmw-gray);
+}
+
+.infotainment-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.infotainment-image {
+    flex: 1;
+}
+
+.infotainment-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--bmw-blue);
+}
+
+.infotainment-features {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: var(--bmw-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: var(--bmw-blue);
+    margin-bottom: 0.5rem;
+}
+
+/* Safety Section */
+.safety {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.safety-item {
+    background: var(--bmw-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.safety-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.safety-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.safety-item h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: var(--bmw-blue);
+}
+
+.safety-item p {
+    padding: 0 1rem 1rem;
+}
+
+/* Electric Tech */
+.electric-tech {
+    padding: 3rem 1rem;
+    background: var(--bmw-gray);
+}
+
+.electric-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.electric-card {
+    background: var(--bmw-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--bmw-blue);
+    transition: all 0.3s ease;
+}
+
+.electric-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--bmw-red);
+}
+
+.electric-card h3 {
+    color: var(--bmw-blue);
+    margin-bottom: 1rem;
+}
+
+/* Back to Top */
+.back-to-top {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tech-feature, 
+    .tech-feature.reverse,
+    .infotainment-container {
+        flex-direction: column;
+    }
+    
+    .infotainment-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-year {
+        left: -45px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+}
